@@ -443,7 +443,8 @@ ul, ol {
 .wrapper {
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #EBF4F7; }
 
 .gallery {
   flex: 1; }
