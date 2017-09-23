@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+/src/bootstrapDist/
+*.xml
+*.iml
+/node_modules/
+/src/.sass-cache/
+*.xml
+.idea/vcs.xml
+.idea/vcs.xml

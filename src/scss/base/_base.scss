@@ -1,0 +1,18 @@
+// ==========================================================================
+// Base
+// ==========================================================================
+// The universal selector (*)
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: $font-size;
+  font-family: $font-family--primary;
+
+}
+
+h1,
+h2,
+p {
+  margin:0;
+}

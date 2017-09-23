@@ -1,0 +1,18 @@
+// ======================================
+//  Button
+// ======================================
+
+.btn {
+  @extend %btn;
+  width: 100%;
+  align-self: flex-end;
+  @include m("active") {
+    background-color: $button-colors-default;
+  }
+  @include m("sm") {
+    margin:0 ;
+    width: 49%;
+  }
+}
+
+

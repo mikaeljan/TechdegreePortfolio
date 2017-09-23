@@ -1,0 +1,25 @@
+// ==========================================================================
+// Extends
+// ==========================================================================
+%link {
+  color: $color--link-default;
+  text-decoration: none;
+}
+// Buttons
+%btn {
+  //display: inline-block;
+  padding: 15px 30px;
+  margin: em(10px) 0;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  font-size : $font-size;
+  font-weight: $font-weight--regular;
+  transition: opacity $trns-duration;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}

@@ -1,0 +1,45 @@
+// ======================================
+//  Form style
+// ======================================
+fieldset {
+  @include flexbox;
+  border: none;
+  padding: 0;
+  margin:0;
+  @include mq("tablet") {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+textarea,
+input,
+select {
+  width:100%;
+  display: inline-block;
+  padding: em(10px);
+  margin: em(10px) 0;
+  border: 1px solid #e5e5e5;
+  border-radius: $br--default;
+  background: $color--input;
+}
+textarea {
+  @include mq("tablet") {
+    padding: em(30px);
+  }
+}
+
+textarea:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 0.5em darken($color-input,15%);
+  //background: #fff;
+}
+
+.form-buttons {
+  @include flexbox;
+  justify-content:space-between;
+}
+.valid-alert {
+  color: red;
+  display:block;
+}

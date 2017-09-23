@@ -1,0 +1,12 @@
+// ======================================
+//  Containers
+// ======================================
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.gallery {
+  flex: 1;
+}

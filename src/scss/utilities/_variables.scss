@@ -1,0 +1,64 @@
+// ==========================================================================
+// Global variables
+// ==========================================================================
+
+// Font-stacks
+$font-url--google        : "https://fonts.googleapis.com/css?family=Cormorant:300,400,700";
+$font-family--primary    : 'Cormorant', Helvetica, Arial, sans-serif;
+// Font Weights
+
+$font-weight--light     : 300;
+$font-weight--regular   : 400;
+$font-weight--bold      : 700;
+
+// Text
+$font-size--xsm : 10px;
+$font-size--sm  : 12px;
+$font-size      : 16px;
+$font-size--lg  : 24px;
+
+
+//Colors
+// Descriptive color variables
+$white          : #fff;
+$black          : #000;
+
+$ship-cove-dark      : #7477BF;
+$ship-cove-light     : #7377BF;
+$mulled-wine         : #4D4C72;
+$dusty-gray          : #9C9C9C;
+$de-york             : #81C98F;
+$alabaster           : #FBFBFB;
+
+$button--active: $de-york;
+$button--default : $ship-cove-light;
+
+// Functional color variables
+
+$color--prim         : $dusty-gray ;
+$color--sec          : $ship-cove-dark ;
+$color--ter          : $mulled-wine;
+$color--input        : $alabaster;
+//
+$color--link-default : $white;
+
+// Icon size
+$icon--sm : 35px;
+$icon--md : 55px;
+
+// Border radius
+
+$br--default    : 0.4em;
+$br--round    : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+//Breakpoints
+$brkpoint--sm    : 576px;
+$brkpoint--md    : 768px;
+$brkpoint--lg    : 962px;
+$brkpoint--xl   : 1200px;
+
+
