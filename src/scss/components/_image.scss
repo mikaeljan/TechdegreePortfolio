@@ -1,14 +1,21 @@
 // ======================================
 //  Images/Icons
 // ======================================
-
-.icon {
-  width: $icon-sm;
+img {
+  width: 100%;
 }
-
-.icon-logo {
-  vertical-align: middle;
-  width: $icon-md;
-  height: $icon-md;
-  border-radius: $br--round;
+.icon {
+  width:$icon--sm;
+  height: $icon--sm;
+@include e("logo"){
+  width:$icon--md;
+  height: $icon--md;
+}
+}
+.path {
+  fill: $white;
+  transition:fill 0.3s;
+}
+a:hover .path {
+  fill: $color--sec;
 }

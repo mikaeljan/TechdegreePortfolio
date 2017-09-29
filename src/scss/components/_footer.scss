@@ -2,8 +2,10 @@
 //  Footer
 // ======================================
 .footer {
-  color: $white;
+  display: flex;
+  justify-content: space-between;
   background-color: $black;
   text-align: center;
-  padding: em(10px) 0;
+  padding: em(10px);
+  margin-top: em(20px);
 }

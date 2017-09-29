@@ -15,38 +15,38 @@ $font-weight--bold      : 700;
 $font-size--xsm : 10px;
 $font-size--sm  : 12px;
 $font-size      : 16px;
-$font-size--lg  : 24px;
+$font-size--lg  : 36px;
 
 
 //Colors
 // Descriptive color variables
 $white          : #fff;
+$light-gold     : lighten(gold,35%);
 $black          : #000;
 
-$ship-cove-dark      : #7477BF;
-$ship-cove-light     : #7377BF;
-$mulled-wine         : #4D4C72;
-$dusty-gray          : #9C9C9C;
-$de-york             : #81C98F;
+
+$shuttle-gray        : #676B75;
+$charade             : #262A33;
 $alabaster           : #FBFBFB;
 $black-squeeze       : #EBF4F7;
+$froly               : #F27173;
 
-$button--active: $de-york;
-$button--default : $ship-cove-light;
+$button--active: $froly;
+$button--default : $froly;
 
 // Functional color variables
-
-$color--prim         : $dusty-gray ;
-$color--sec          : $ship-cove-dark ;
-$color--ter          : $mulled-wine;
+$color--prim         : $white;
+$color--sec          : $froly;
 $color--input        : $alabaster;
-$color--bg           : $black-squeeze;
-//
+$color--bg           : $shuttle-gray;
+$color--bg--light    : $alabaster;
+
+
 $color--link-default : $white;
 
 // Icon size
-$icon--sm : 35px;
-$icon--md : 55px;
+$icon--sm : 25px;
+$icon--md : 40px;
 
 // Border radius
 
@@ -55,7 +55,7 @@ $br--round    : 50%;
 
 // Transitions
 
-$trns-duration  : .3s;
+$trns-duration  : .5s;
 
 //Breakpoints
 $brkpoint--sm    : 576px;

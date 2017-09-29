@@ -9,12 +9,8 @@
 6. At this point dist is already included.
 
 ## To do
-- Hamburger menu
 - Smooth scrolling
-- modal window? ako a kde
-- nejake transformation effekty na linkoch a obrazkoch
-- tooltips?
-
+- carousel
 1. Web Accessibility
 2. Web Optimization
 3. Add Google Email script - https://github.com/dwyl/html-form-send-email-via-google-script-without-server

@@ -7,7 +7,21 @@
   flex-direction: column;
   background-color: $color--bg;
 }
+.jumbotron {
+  //background: no-repeat url("../img/photos/beach.jpg");
+  padding-top:em(50px);
+  @include e("title") {
+    font-size: $font-size--lg;
+  }
+  .title--color {
+    color: $color--sec;
+  }
+  @include e("lead") {
+    font-size: $font-size;
+  }
 
-.gallery {
-  flex: 1;
+}
+.row {
+  border: 1px solid black;
+
 }

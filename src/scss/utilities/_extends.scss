@@ -7,19 +7,21 @@
 }
 // Buttons
 %btn {
-  //display: inline-block;
-  padding: 15px 30px;
-  margin: em(10px) 0;
+  background-color: $button--active;
+  padding: em(7px) em(13px);
+  margin: em(10px);
   border: 0;
   border-radius : $br--default;
   color: $white;
-  font-size : $font-size;
-  font-weight: $font-weight--regular;
-  transition: opacity $trns-duration;
+  font-size : $font-size--sm;
+  font-weight: $font-weight--bold;
+  transition: background-color $trns-duration;
   &:hover {
-    opacity: .75;
+    background-color: darken(black,10%);
+    color: $color--prim;
   }
   &:active {
     opacity: initial;
+    padding: em(6px) em(13px) em(8px);
   }
 }
