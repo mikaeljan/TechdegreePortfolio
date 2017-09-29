@@ -11,8 +11,13 @@
   margin: em(10px);
   border-radius: $br--default;
   box-shadow: 0 0 45px rgba(0,0,0,.8);
-
+  @include mq("tablet"){
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
 .project {
   box-shadow: 0 0 15px rgba(0,0,0,.6);
   width:90%;
@@ -20,6 +25,10 @@
   margin:em(20px) 0 0;
   position:relative;
   overflow: hidden;
+  @include mq("tablet"){
+    width:45%;
+    margin:em(10px);
+  }
   @include e("overlay"){
     display: flex;
     flex-direction: column;

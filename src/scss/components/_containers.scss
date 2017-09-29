@@ -9,7 +9,7 @@
 }
 .jumbotron {
   //background: no-repeat url("../img/photos/beach.jpg");
-  padding-top:em(50px);
+  padding-top:em(60px);
   @include e("title") {
     font-size: $font-size--lg;
   }

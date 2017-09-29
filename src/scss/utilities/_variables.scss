@@ -39,7 +39,7 @@ $color--prim         : $white;
 $color--sec          : $froly;
 $color--input        : $alabaster;
 $color--bg           : $shuttle-gray;
-$color--bg--light    : $alabaster;
+$color--bg--light    : darken($alabaster, 15%);
 
 
 $color--link-default : $white;

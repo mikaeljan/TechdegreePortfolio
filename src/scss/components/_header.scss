@@ -14,7 +14,7 @@ header{
   z-index: 100;
   background-color: darken(rgba($color--bg, .5), 25%);
   justify-content: space-around;
-  padding: em(10px) 0;
+  padding: em(10px) 0 0;
   @include e("item"){
     width:20%;
   }
@@ -24,7 +24,6 @@ header{
   border-radius: $br--round;
   padding: em(5px);
   &:hover {
-    border: 1px solid $white;
     transform: scale(1.2);
   }
 }
