@@ -8,3 +8,4 @@
 .idea/vcs.xml
 .idea/vcs.xml
 /src/img/icons/
+/src/scss/components/_form.scss

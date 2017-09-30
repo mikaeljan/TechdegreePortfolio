@@ -9,8 +9,11 @@
 6. At this point dist is already included.
 
 ## To do
-- Smooth scrolling
+- About section
+- Fix images in projects
+- SVG for social links
 - carousel
+- responsivness
 1. Web Accessibility
 2. Web Optimization
 3. Add Google Email script - https://github.com/dwyl/html-form-send-email-via-google-script-without-server

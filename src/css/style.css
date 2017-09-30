@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300,400,700");
-.overlay__button {
+.overlay__button, .btn {
   background-color: #F27173;
   padding: 0.4375em 0.8125em;
   margin: 0.625em;
@@ -9,10 +9,10 @@
   font-size: 12px;
   font-weight: 700;
   transition: background-color 0.5s; }
-  .overlay__button:hover {
+  .overlay__button:hover, .btn:hover {
     background-color: black;
     color: #fff; }
-  .overlay__button:active {
+  .overlay__button:active, .btn:active {
     opacity: initial;
     padding: 0.375em 0.8125em 0.5em; }
 
@@ -486,14 +486,17 @@ header {
   flex-direction: column;
   background-color: #676B75; }
 
-.jumbotron {
+.about {
+  text-align: center;
   padding-top: 3.75em; }
-  .jumbotron__title {
+  .about__title {
     font-size: 36px; }
-  .jumbotron .title--color {
+  .about .title--color {
     color: #F27173; }
-  .jumbotron__lead {
-    font-size: 16px; }
+
+.lead {
+  font-size: 16px;
+  margin: 0.3125em 0; }
 
 .row {
   border: 1px solid black; }
@@ -512,19 +515,23 @@ header {
     #portfolio {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center; } }
+      justify-content: center;
+      align-items: stretch; } }
 
 .project {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   width: 90%;
   border-radius: 0.4em;
-  margin: 1.25em 0 0;
+  margin: 2.5em 0 0;
   position: relative;
   overflow: hidden; }
   @media (min-width: 768px) {
     .project {
       width: 45%;
       margin: 0.625em; } }
+  @media (min-width: 962px) {
+    .project {
+      width: 25%; } }
   .project__overlay {
     display: flex;
     flex-direction: column;
@@ -540,7 +547,21 @@ header {
     padding: 0.5em;
     text-align: center; }
 
+.project__overlay .list {
+  justify-content: center;
+  font-size: 10px;
+  margin-left: 0.9375em; }
+  .project__overlay .list__item {
+    margin: 0.3125em; }
+
+.project__overlay h3 {
+  font-size: 12px; }
+
+.project__overlay p {
+  font-size: 10px; }
+
 .overlay__buttons {
+  margin: 0.3125em;
   width: 80%; }
 
 .project__img,
@@ -552,6 +573,31 @@ header {
 
 .project:hover .project__img {
   transform: translateX(100%); }
+
+.contact, .skills {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.25em auto;
+  text-align: center; }
+
+.social {
+  width: 100%;
+  margin: 0.9375em 0; }
+
+.list {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+
+.list svg {
+  transition: transform 0.5s ease; }
+  .list svg:hover {
+    transform: scale(1.2); }
+
+.list .icon {
+  width: 40px;
+  height: 40px; }
 
 img {
   width: 100%; }

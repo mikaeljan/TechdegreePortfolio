@@ -7,8 +7,9 @@
   flex-direction: column;
   background-color: $color--bg;
 }
-.jumbotron {
+.about {
   //background: no-repeat url("../img/photos/beach.jpg");
+  text-align: center;
   padding-top:em(60px);
   @include e("title") {
     font-size: $font-size--lg;
@@ -16,10 +17,10 @@
   .title--color {
     color: $color--sec;
   }
-  @include e("lead") {
-    font-size: $font-size;
-  }
-
+}
+.lead {
+  font-size: $font-size;
+  margin: em(5px) 0;
 }
 .row {
   border: 1px solid black;

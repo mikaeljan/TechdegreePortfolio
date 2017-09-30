@@ -1,0 +1,30 @@
+// ======================================
+//  Contact style
+// ======================================
+.contact, .skills {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin:em(20px) auto;
+  text-align: center;
+}
+.social {
+  width: 100%;
+  margin: em(15px) 0;
+}
+.list {
+  display: flex;
+  width:100%;
+  justify-content:space-around;
+
+}
+.list svg {
+  transition: transform $trns-duration ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.list .icon {
+  width: $icon--md;
+  height: $icon--md;
+}

@@ -15,6 +15,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
   }
 }
 
@@ -22,13 +23,34 @@
   box-shadow: 0 0 15px rgba(0,0,0,.6);
   width:90%;
   border-radius: $br--default;
-  margin:em(20px) 0 0;
+  margin:em(40px) 0 0;
   position:relative;
   overflow: hidden;
   @include mq("tablet"){
     width:45%;
     margin:em(10px);
   }
+  @include mq("desktop"){
+    width:25%;
+  }
+  //@include m("1"){
+  //  background: url("../img/projects/project-1.jpg") center;
+  //}
+  //@include m("2"){
+  //  background: url("../img/projects/project-2.jpg") center;
+  //}
+  //@include m("3"){
+  //  background: url("../img/projects/project-3.jpg") center;
+  //}
+  //@include m("4"){
+  //  background: url("../img/projects/project-4.jpg") center;
+  //}
+  //@include m("5"){
+  //  //background: url("../img/projects/project-5.jpg") center center;
+  //}
+  //@include m("6"){
+  //  //background: url("../img/projects/project-6.jpg") center center;
+  //}
   @include e("overlay"){
     display: flex;
     flex-direction: column;
@@ -45,7 +67,23 @@
     text-align: center;
   }
 }
+.project__overlay .list {
+  justify-content: center;
+  font-size: $font-size--xsm;
+  margin-left:em(15px);
+  @include e("item") {
+    margin:em(5px);
+  }
+}
+.project__overlay h3 {
+  font-size: $font-size--sm;
+}
+.project__overlay p {
+  font-size: $font-size--xsm;
+}
+
 .overlay__buttons {
+  margin: em(5px);
   width:80%;
   //justify-content: flex-end;
 }
