@@ -501,6 +501,10 @@ header {
 .row {
   border: 1px solid black; }
 
+aside {
+  margin: auto;
+  width: 90%; }
+
 #portfolio {
   background-color: #d5d5d5;
   flex: 1;
