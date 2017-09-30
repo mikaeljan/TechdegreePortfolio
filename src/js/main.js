@@ -13,4 +13,14 @@ $(document).ready(function() {
         });
     });
     // End Smooth scrolling feature
+
+    //Carousel scrolling
+    $('.carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
+
+    //End carousel scrolling
 });
