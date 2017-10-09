@@ -7,8 +7,8 @@
   display:flex;
   align-items: center;
   flex-direction: column;
-  padding:em(10px) 0;
-  margin: em(10px);
+  padding:em(5px) 0;
+  margin: em(25px) 0;
   border-radius: $br--default;
   box-shadow: 0 0 45px rgba(0,0,0,.8);
   @include mq("tablet"){
@@ -20,10 +20,11 @@
 }
 
 .project {
+  background-image: url("../img/projects/project-1.jpg");
   box-shadow: 0 0 15px rgba(0,0,0,.6);
-  width:90%;
+  max-width:90%;
   border-radius: $br--default;
-  margin:em(40px) 0 0;
+  margin:em(20px) 0;
   position:relative;
   overflow: hidden;
   @include mq("tablet"){

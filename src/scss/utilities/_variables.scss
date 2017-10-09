@@ -27,19 +27,22 @@ $black          : #000;
 
 $shuttle-gray        : #676B75;
 $charade             : #262A33;
+$mine-shaft          : #292929;
 $alabaster           : #FBFBFB;
 $black-squeeze       : #EBF4F7;
-$froly               : #F27173;
+$valencia               : #D84348;
 
-$button--active: $froly;
-$button--default : $froly;
+$button--active: $valencia;
+$button--default : $valencia;
 
 // Functional color variables
 $color--prim         : $white;
-$color--sec          : $froly;
+$color--sec          : $valencia;
 $color--input        : $alabaster;
+
 $color--bg           : $shuttle-gray;
-$color--bg--light    : darken($alabaster, 15%);
+$color--bg--light    : $alabaster;
+$color--bg--dark     : $mine-shaft;
 
 
 $color--link-default : $white;
@@ -47,7 +50,8 @@ $color--link-default : $white;
 // Icon size
 $icon--sm : 25px;
 $icon--md : 40px;
-$icon--lg : 65px;
+$icon--lg : 150px;
+$icon--xlg : 250px;
 
 // Border radius
 

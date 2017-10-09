@@ -12,7 +12,7 @@ header{
   display: flex;
   width:100%;
   z-index: 100;
-  background-color: darken(rgba($color--bg, .5), 25%);
+  background-color: darken(rgba($color--bg, .5), 35%);
   justify-content: space-around;
   padding: em(10px) 0 0;
   @include e("item"){

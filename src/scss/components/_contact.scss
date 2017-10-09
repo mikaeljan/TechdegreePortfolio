@@ -16,7 +16,11 @@
   display: flex;
   width:100%;
   justify-content:space-around;
+  margin: em(25px) 0;
+  flex-wrap: wrap;
+  @include e("item") {
 
+  }
 }
 .list svg {
   transition: transform $trns-duration ease;
@@ -24,7 +28,18 @@
     transform: scale(1.2);
   }
 }
+.outer-shape {
+  fill: $white;
+}
+.inner-shape {
+  fill:$color--bg--dark;
+}
+
 .list .icon {
   width: $icon--md;
   height: $icon--md;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
 }

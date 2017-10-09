@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300,400,700");
+.title {
+  font-size: 36px;
+  margin: 15px 0; }
+
 .overlay__button, .btn {
-  background-color: #F27173;
+  background-color: #D84348;
   padding: 0.4375em 0.8125em;
   margin: 0.625em;
   border: 0;
@@ -15,27 +19,6 @@
   .overlay__button:active, .btn:active {
     opacity: initial;
     padding: 0.375em 0.8125em 0.5em; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  font-size: 16px;
-  font-family: "Cormorant", Helvetica, Arial, sans-serif;
-  color: #fff; }
-
-h1,
-h2,
-h3,
-p {
-  margin: 0; }
-
-a {
-  text-decoration: none;
-  color: #fff; }
-
-a:hover {
-  color: #F27173; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -449,6 +432,34 @@ ul, ol {
   padding: 0;
   margin: 0; }
 
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: "Cormorant", Helvetica, Arial, sans-serif;
+  color: #fff; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+a:hover {
+  color: #D84348; }
+
+.title__color {
+  color: #D84348; }
+
+.desc {
+  font-size: 16px;
+  margin: 0.625em 0; }
+
 header {
   text-align: center;
   display: flex;
@@ -459,7 +470,7 @@ header {
   display: flex;
   width: 100%;
   z-index: 100;
-  background-color: rgba(43, 45, 49, 0.5);
+  background-color: rgba(19, 20, 22, 0.5);
   justify-content: space-around;
   padding: 0.625em 0 0; }
   .nav__item {
@@ -480,39 +491,45 @@ header {
   padding: 0.625em;
   margin-top: 1.25em; }
 
-.wrapper {
+.container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #676B75; }
+  background-color: #292929; }
+
+.wrapper {
+  padding-top: 85px;
+  margin: 0 25px; }
 
 .about {
-  text-align: center;
-  padding-top: 3.75em; }
-  .about__title {
-    font-size: 36px; }
-  .about .title--color {
-    color: #F27173; }
-
-.lead {
-  font-size: 16px;
-  margin: 0.3125em 0; }
-
-.row {
-  border: 1px solid black; }
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .about {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between; } }
+  .about__image {
+    margin: 25px; }
+  .about--description {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .about--description {
+        text-align: left; } }
 
 aside {
   margin: auto;
   width: 90%; }
 
 #portfolio {
-  background-color: #d5d5d5;
+  background-color: #FBFBFB;
   flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0.625em 0;
-  margin: 0.625em;
+  padding: 0.3125em 0;
+  margin: 1.5625em 0;
   border-radius: 0.4em;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.8); }
   @media (min-width: 768px) {
@@ -523,10 +540,11 @@ aside {
       align-items: stretch; } }
 
 .project {
+  background-image: url("../img/projects/project-1.jpg");
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  width: 90%;
+  max-width: 90%;
   border-radius: 0.4em;
-  margin: 2.5em 0 0;
+  margin: 1.25em 0;
   position: relative;
   overflow: hidden; }
   @media (min-width: 768px) {
@@ -592,16 +610,27 @@ aside {
 .list {
   display: flex;
   width: 100%;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 1.5625em 0;
+  flex-wrap: wrap; }
 
 .list svg {
   transition: transform 0.5s ease; }
   .list svg:hover {
     transform: scale(1.2); }
 
+.outer-shape {
+  fill: #fff; }
+
+.inner-shape {
+  fill: #292929; }
+
 .list .icon {
   width: 40px;
   height: 40px; }
+
+.slick-initialized .slick-slide {
+  display: flex; }
 
 img {
   width: 100%; }
@@ -609,16 +638,20 @@ img {
 .icon {
   width: 25px;
   height: 25px; }
-  .icon__logo {
-    width: 65px;
-    height: 65px;
+  .icon--profile {
+    width: 150px;
+    height: 150px;
     border-radius: 50%; }
+    @media (min-width: 768px) {
+      .icon--profile {
+        width: 250px;
+        height: 250px; } }
 
 .path {
   fill: #fff;
   transition: fill 0.3s; }
 
 a:hover .path {
-  fill: #F27173; }
+  fill: #D84348; }
 
 /*# sourceMappingURL=style.css.map */

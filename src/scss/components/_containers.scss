@@ -1,29 +1,37 @@
 // ======================================
 //  Containers
 // ======================================
-.wrapper {
+.container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: $color--bg;
+  background-color: $color--bg--dark;
+}
+.wrapper {
+  padding-top: 85px;
+  margin: 0 25px;
 }
 .about {
-  //background: no-repeat url("../img/photos/beach.jpg");
-  text-align: center;
-  padding-top:em(60px);
-  @include e("title") {
-    font-size: $font-size--lg;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  @include mq("tablet") {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content:space-between;
   }
-  .title--color {
-    color: $color--sec;
+  @include e('image'){
+    margin:25px;
+  }
+  @include m('description'){
+    text-align: center;
+    @include mq('tablet') {
+      text-align: left;
+    }
   }
 }
-.lead {
-  font-size: $font-size;
-  margin: em(5px) 0;
-}
+
 .row {
-  border: 1px solid black;
 }
 aside {
   margin: auto;

@@ -4,13 +4,18 @@
 img {
   width: 100%;
 }
+
 .icon {
   width:$icon--sm;
   height: $icon--sm;
-  @include e("logo"){
+  @include m("profile"){
     width:$icon--lg;
     height: $icon--lg;
     border-radius: $br--round;
+    @include mq('tablet'){
+      width:$icon--xlg;
+      height: $icon--xlg;
+    }
   }
 }
 .path {

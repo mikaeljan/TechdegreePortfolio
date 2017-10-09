@@ -5,6 +5,10 @@
   color: $color--link-default;
   text-decoration: none;
 }
+%title {
+  font-size: $font-size--lg;
+  margin: 15px 0;
+}
 // Buttons
 %btn {
   background-color: $button--active;

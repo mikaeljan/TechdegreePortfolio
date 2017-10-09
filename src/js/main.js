@@ -5,9 +5,10 @@ $(document).ready(function() {
 
         let target = this.hash;
         let $target = $(target);
+        let headerHeight = $(".nav").height();
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
+            'scrollTop': $target.offset().top - headerHeight
         }, 1100, 'swing', function () {
             window.location.hash = target;
         });
@@ -18,7 +19,7 @@ $(document).ready(function() {
     $('.carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
     });
     // $('#portfolio').slick({
