@@ -1,12 +1,15 @@
 // ======================================
 //  Contact style
 // ======================================
-.contact, .skills {
+.contact, .about {
   width: 90%;
   display: flex;
   flex-direction: column;
   margin:em(20px) auto;
   text-align: center;
+  @include mq("desktop") {
+
+  }
 }
 .social {
   width: 100%;

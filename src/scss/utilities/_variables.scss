@@ -16,6 +16,7 @@ $font-size--xsm : 13px;
 $font-size--sm  : 15px;
 $font-size--md  : 16px;
 $font-size--lg  : 26px;
+$font-size--xlg : 36px;
 
 
 //Colors
@@ -32,7 +33,7 @@ $alabaster           : #FBFBFB;
 $black-squeeze       : #EBF4F7;
 $valencia               : #D84348;
 
-$button--active       : lighten($valencia,15%);
+$button--active       : lighten($valencia,10%);
 $button--default      : $valencia;
 
 // Functional color variables

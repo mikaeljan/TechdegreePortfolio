@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300,400,700");
 .title {
-  margin: 15px 0; }
+  font-family: "Cormorant", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  margin: 15px 0 40px 0; }
+  @media (min-width: 768px) {
+    .title {
+      margin: 10px 0 40px 0; } }
 
 .overlay__button, .btn {
   background-color: #D84348;
@@ -12,15 +17,16 @@
   font-weight: 700;
   transition: background-color 0.5s; }
   .overlay__button:hover, .btn:hover {
-    background-color: #e58286;
+    background-color: #e16d71;
     color: #fff; }
   .overlay__button:active, .btn:active {
     opacity: initial;
     padding: 0.375em 0.8125em 0.5em; }
 
-.project, .project--1, .project--2, .project--3, .project--4 {
+.project {
   display: flex;
   background-size: cover;
+  background-position: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   width: 90%;
   min-height: 250px;
@@ -29,12 +35,12 @@
   position: relative;
   overflow: hidden; }
   @media (min-width: 768px) {
-    .project, .project--1, .project--2, .project--3, .project--4 {
+    .project {
       width: 45%;
-      margin: 0.625em; } }
+      margin: 0.625em 0.625em 1.5625em 0; } }
   @media (min-width: 962px) {
-    .project, .project--1, .project--2, .project--3, .project--4 {
-      width: 25%; } }
+    .project {
+      width: 30%; } }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -469,12 +475,20 @@ a {
 a:hover {
   color: #D84348; }
 
-.title__color {
+.title {
   color: #D84348; }
+  .title__color {
+    color: #D84348; }
 
 .desc {
   font-size: 16px;
-  margin: 0.625em 0; }
+  margin: 0.625em 0 1.875em 0; }
+
+.intro__description .intro__desc {
+  font-size: 20px; }
+  @media (min-width: 768px) {
+    .intro__description .intro__desc {
+      font-size: 26px; } }
 
 header {
   text-align: center;
@@ -514,8 +528,13 @@ header {
   background-color: #292929; }
 
 .wrapper {
-  margin: 50px 25px 0 25px;
-  text-align: center; }
+  margin: 40px 25px 0 25px;
+  text-align: center;
+  border-bottom: 1px #fff3b3 solid;
+  border-bottom: 1px #D84348 solid; }
+
+.wrapper:last-child {
+  border-bottom: none; }
 
 .intro {
   display: flex;
@@ -528,14 +547,23 @@ header {
       justify-content: space-between; } }
   .intro__image {
     margin: 25px; }
-  .intro--description {
+  .intro__description {
     text-align: center; }
     @media (min-width: 768px) {
-      .intro--description {
+      .intro__description {
+        text-align: left; } }
+    @media (min-width: 768px) {
+      .intro__description {
         text-align: left; } }
 
 aside {
-  margin: auto; }
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+  @media (min-width: 962px) {
+    aside {
+      flex-direction: row;
+      justify-content: stretch; } }
 
 #portfolio {
   background-color: #FBFBFB;
@@ -562,6 +590,10 @@ aside {
   background-image: url("../img/projects/project-3.jpg"); }
 .project--4 {
   background-image: url("../img/projects/project-4.jpg"); }
+.project--5 {
+  background-image: url("../img/projects/project-5.jpg"); }
+.project--6 {
+  background-image: url("../img/projects/project-6.jpg"); }
 .project__overlay {
   width: 100%;
   display: flex;
@@ -569,7 +601,7 @@ aside {
   justify-content: space-around;
   align-items: center;
   transform: translateX(-100%);
-  background-color: #2C3E50;
+  background-color: #292929;
   padding: 0.5em;
   text-align: center; }
 
@@ -590,7 +622,7 @@ aside {
 .project:hover .project__overlay {
   transform: translateX(0); }
 
-.contact, .skills {
+.contact, .about {
   width: 90%;
   display: flex;
   flex-direction: column;
