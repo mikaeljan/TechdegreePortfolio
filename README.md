@@ -1,6 +1,6 @@
 # A personal portfolio showcase
-
-## Building process (in case you are missing the dist folder)
+For now, please use src folder. The project is not minified for dist.
+## Building process (! in progress! )
 1. Open up a terminal window and change your working directory to root of this repo.
 2. Run `npm install` command in your terminal window.
 3. Change your working directory to `/src` of this repo.
@@ -9,6 +9,7 @@
 6. At this point dist is already included.
 
 ## Further Implementations
+0. Fix minifying JS files.
 1. Better introduction styling
 2. Full page carousel/slides?
 3. Add Google Email script - https://github.com/dwyl/html-form-send-email-via-google-script-without-server
