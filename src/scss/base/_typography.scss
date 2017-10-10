@@ -7,10 +7,9 @@
   @include e("color") {
     color: $color--sec;
   }
-  @include m("")
 }
 
 .desc {
-  font-size: $font-size;
+  font-size: $font-size--md;
   margin: em(10px) 0;
 }

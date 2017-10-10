@@ -12,10 +12,10 @@ $font-weight--regular   : 400;
 $font-weight--bold      : 700;
 
 // Text
-$font-size--xsm : 10px;
-$font-size--sm  : 12px;
-$font-size      : 16px;
-$font-size--lg  : 36px;
+$font-size--xsm : 13px;
+$font-size--sm  : 15px;
+$font-size--md  : 16px;
+$font-size--lg  : 26px;
 
 
 //Colors
@@ -32,8 +32,8 @@ $alabaster           : #FBFBFB;
 $black-squeeze       : #EBF4F7;
 $valencia               : #D84348;
 
-$button--active: $valencia;
-$button--default : $valencia;
+$button--active       : lighten($valencia,10%);
+$button--default      : $valencia;
 
 // Functional color variables
 $color--prim         : $white;

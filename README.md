@@ -11,9 +11,6 @@
 ## Further Implementations
 1. About section
 2. full page carousel/slides?
-3. SVG for social links
-4. carousel
-5. Web Optimization
 6. Add Google Email script - https://github.com/dwyl/html-form-send-email-via-google-script-without-server
 
 ## Contact

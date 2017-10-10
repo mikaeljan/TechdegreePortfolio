@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300,400,700");
 .title {
-  font-size: 36px;
   margin: 15px 0; }
 
 .overlay__button, .btn {
@@ -10,15 +9,32 @@
   border: 0;
   border-radius: 0.4em;
   color: #fff;
-  font-size: 12px;
   font-weight: 700;
   transition: background-color 0.5s; }
   .overlay__button:hover, .btn:hover {
-    background-color: black;
+    background-color: #e16d71;
     color: #fff; }
   .overlay__button:active, .btn:active {
     opacity: initial;
     padding: 0.375em 0.8125em 0.5em; }
+
+.project, .project--1, .project--2, .project--3, .project--4 {
+  display: flex;
+  background-size: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  min-height: 250px;
+  border-radius: 0.4em;
+  margin: 1.25em 0;
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .project, .project--1, .project--2, .project--3, .project--4 {
+      width: 45%;
+      margin: 0.625em; } }
+  @media (min-width: 962px) {
+    .project, .project--1, .project--2, .project--3, .project--4 {
+      width: 25%; } }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -498,29 +514,28 @@ header {
   background-color: #292929; }
 
 .wrapper {
-  padding-top: 85px;
-  margin: 0 25px; }
+  margin: 50px 25px 0 25px;
+  text-align: center; }
 
-.about {
+.intro {
   display: flex;
   flex-direction: column-reverse;
   align-items: center; }
   @media (min-width: 768px) {
-    .about {
+    .intro {
       flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between; } }
-  .about__image {
+  .intro__image {
     margin: 25px; }
-  .about--description {
+  .intro--description {
     text-align: center; }
     @media (min-width: 768px) {
-      .about--description {
+      .intro--description {
         text-align: left; } }
 
 aside {
-  margin: auto;
-  width: 90%; }
+  margin: auto; }
 
 #portfolio {
   background-color: #FBFBFB;
@@ -539,52 +554,34 @@ aside {
       justify-content: center;
       align-items: stretch; } }
 
-.project {
-  background-image: url("../img/projects/project-1.jpg");
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  max-width: 90%;
-  border-radius: 0.4em;
-  margin: 1.25em 0;
-  position: relative;
-  overflow: hidden; }
-  @media (min-width: 768px) {
-    .project {
-      width: 45%;
-      margin: 0.625em; } }
-  @media (min-width: 962px) {
-    .project {
-      width: 25%; } }
-  .project__overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    transform: translateX(-100%);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #2C3E50;
-    padding: 0.5em;
-    text-align: center; }
+.project--1 {
+  background-image: url("../img/projects/project-1.jpg"); }
+.project--2 {
+  background-image: url("../img/projects/project-2.jpg"); }
+.project--3 {
+  background-image: url("../img/projects/project-3.jpg"); }
+.project--4 {
+  background-image: url("../img/projects/project-4.jpg"); }
+.project__overlay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateX(-100%);
+  background-color: #292929;
+  padding: 0.5em;
+  text-align: center; }
 
 .project__overlay .list {
   justify-content: center;
-  font-size: 10px;
+  font-size: 15px;
   margin-left: 0.9375em; }
   .project__overlay .list__item {
     margin: 0.3125em; }
 
-.project__overlay h3 {
-  font-size: 12px; }
-
-.project__overlay p {
-  font-size: 10px; }
-
 .overlay__buttons {
-  margin: 0.3125em;
-  width: 80%; }
+  margin: 0.3125em; }
 
 .project__img,
 .project__overlay {
@@ -592,20 +589,6 @@ aside {
 
 .project:hover .project__overlay {
   transform: translateX(0); }
-
-.project:hover .project__img {
-  transform: translateX(100%); }
-
-.contact, .skills {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  margin: 1.25em auto;
-  text-align: center; }
-
-.social {
-  width: 100%;
-  margin: 0.9375em 0; }
 
 .list {
   display: flex;
@@ -629,9 +612,6 @@ aside {
   width: 40px;
   height: 40px; }
 
-.slick-initialized .slick-slide {
-  display: flex; }
-
 img {
   width: 100%; }
 
@@ -644,8 +624,8 @@ img {
     border-radius: 50%; }
     @media (min-width: 768px) {
       .icon--profile {
-        width: 250px;
-        height: 250px; } }
+        height: 250px;
+        border-radius: 0.4em; } }
 
 .path {
   fill: #fff;

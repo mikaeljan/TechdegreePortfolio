@@ -5,27 +5,45 @@
   color: $color--link-default;
   text-decoration: none;
 }
+
 %title {
-  font-size: $font-size--lg;
   margin: 15px 0;
 }
 // Buttons
 %btn {
-  background-color: $button--active;
+  background-color: $button--default;
   padding: em(7px) em(13px);
   margin: em(10px);
   border: 0;
-  border-radius : $br--default;
+  border-radius: $br--default;
   color: $white;
-  font-size : $font-size--sm;
   font-weight: $font-weight--bold;
   transition: background-color $trns-duration;
   &:hover {
-    background-color: darken(black,10%);
+    background-color: $button--active;
     color: $color--prim;
   }
   &:active {
     opacity: initial;
     padding: em(6px) em(13px) em(8px);
+  }
+}
+//
+%project {
+  display: flex;
+  background-size: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,.6);
+  width:90%;
+  min-height: 250px;
+  border-radius: $br--default;
+  margin:em(20px) 0;
+  position:relative;
+  overflow: hidden;
+  @include mq("tablet"){
+    width:45%;
+    margin:em(10px);
+  }
+  @include mq("desktop"){
+    width:25%;
   }
 }

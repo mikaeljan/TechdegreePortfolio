@@ -1,6 +1,7 @@
 // ======================================
 //  Portfolio
 // ======================================
+
 #portfolio {
   background-color: $color--bg--light;
   flex: 1;
@@ -20,73 +21,46 @@
 }
 
 .project {
-  background-image: url("../img/projects/project-1.jpg");
-  box-shadow: 0 0 15px rgba(0,0,0,.6);
-  max-width:90%;
-  border-radius: $br--default;
-  margin:em(20px) 0;
-  position:relative;
-  overflow: hidden;
-  @include mq("tablet"){
-    width:45%;
-    margin:em(10px);
+  @extend %project;
+  @include m("1"){
+    background-image: url("../img/projects/project-1.jpg");
+    @extend %project;
   }
-  @include mq("desktop"){
-    width:25%;
+  @include m("2"){
+    background-image: url("../img/projects/project-2.jpg");
+    @extend %project;
   }
-  //@include m("1"){
-  //  background: url("../img/projects/project-1.jpg") center;
-  //}
-  //@include m("2"){
-  //  background: url("../img/projects/project-2.jpg") center;
-  //}
-  //@include m("3"){
-  //  background: url("../img/projects/project-3.jpg") center;
-  //}
-  //@include m("4"){
-  //  background: url("../img/projects/project-4.jpg") center;
-  //}
-  //@include m("5"){
-  //  //background: url("../img/projects/project-5.jpg") center center;
-  //}
-  //@include m("6"){
-  //  //background: url("../img/projects/project-6.jpg") center center;
-  //}
+  @include m("3"){
+    background-image: url("../img/projects/project-3.jpg");
+    @extend %project;
+  }
+  @include m("4"){
+    background-image: url("../img/projects/project-4.jpg");
+    @extend %project;
+  }
   @include e("overlay"){
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     transform: translateX(-100%);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #2C3E50;
+    background-color: $color--bg--dark;
     padding: em(8px);
     text-align: center;
   }
 }
+
 .project__overlay .list {
   justify-content: center;
-  font-size: $font-size--xsm;
+  font-size: $font-size--sm;
   margin-left:em(15px);
   @include e("item") {
     margin:em(5px);
   }
 }
-.project__overlay h3 {
-  font-size: $font-size--sm;
-}
-.project__overlay p {
-  font-size: $font-size--xsm;
-}
-
 .overlay__buttons {
   margin: em(5px);
-  width:80%;
-  //justify-content: flex-end;
 }
 .overlay__button {
   @extend %btn;
@@ -99,8 +73,8 @@
 .project:hover .project__overlay {
   transform: translateX(0);
 }
-
-.project:hover .project__img {
-  transform: translateX(100%);
-}
+//
+//.project:hover .project__img {
+//  transform: translateX(100%);
+//}
 

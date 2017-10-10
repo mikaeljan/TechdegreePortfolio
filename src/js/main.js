@@ -8,7 +8,7 @@ $(document).ready(function() {
         let headerHeight = $(".nav").height();
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - headerHeight
+            'scrollTop': $target.offset().top
         }, 1100, 'swing', function () {
             window.location.hash = target;
         });
@@ -16,12 +16,14 @@ $(document).ready(function() {
     // End Smooth scrolling feature
 
     //Carousel scrolling
-    $('.carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 4000,
-    });
+    // if($(window).width() > 700) {
+    //     $('#portfolio').slick({
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         autoplay: false,
+    //         autoplaySpeed: 4000,
+    //     });
+    // }
     // $('#portfolio').slick({
     //     slidesToShow: 1,
     //     slidesToScroll: 1,

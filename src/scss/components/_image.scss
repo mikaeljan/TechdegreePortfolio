@@ -1,6 +1,7 @@
 // ======================================
 //  Images/Icons
 // ======================================
+
 img {
   width: 100%;
 }
@@ -13,8 +14,8 @@ img {
     height: $icon--lg;
     border-radius: $br--round;
     @include mq('tablet'){
-      width:$icon--xlg;
       height: $icon--xlg;
+      border-radius: $br--default;
     }
   }
 }

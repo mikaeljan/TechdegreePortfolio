@@ -7,7 +7,6 @@ const gulp  = require('gulp'),
     del       = require('del'),
     imagemin  = require('gulp-imagemin'),
     csso      = require('gulp-csso'),
-    // gzip      = require('gulp-gzip'),
     inlineSource = require('gulp-inline-source');
 
 const options = {
