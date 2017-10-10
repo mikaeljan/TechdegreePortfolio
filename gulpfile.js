@@ -15,7 +15,7 @@ const options = {
 };
 
 // gulp.task('inlineSource',["useref"],function(){
-//     return gulp.src(options.dist+'/index.html')
+//     return gulp.docs(options.dist+'/index.html')
 //         .pipe(inlineSource())
 //         .pipe(gulp.dest(options.dist));
 // });

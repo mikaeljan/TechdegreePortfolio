@@ -1,12 +1,13 @@
 # Created by .ignore support plugin (hsz.mobi)
-/src/bootstrapDist/
+/docs/bootstrapDist/
 *.xml
 *.iml
 /node_modules/
-/src/.sass-cache/
+/docs/.sass-cache/
 *.xml
 .idea/vcs.xml
 .idea/vcs.xml
-/src/img/icons/
-/src/scss/components/_form.scss
-/src/slick/
+/docs/img/icons/
+/docs/scss/components/_form.scss
+/docs/slick/
+*.scssc
