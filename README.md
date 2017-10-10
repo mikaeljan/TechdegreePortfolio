@@ -1,5 +1,5 @@
 # A personal portfolio showcase
-For now, please use src folder. The project is not minified for dist.
+
 ## Building process (! in progress! )
 1. Open up a terminal window and change your working directory to root of this repo.
 2. Run `npm install` command in your terminal window.
@@ -14,7 +14,6 @@ For now, please use src folder. The project is not minified for dist.
 2. Full page carousel/slides?
 3. Add Google Email script - https://github.com/dwyl/html-form-send-email-via-google-script-without-server
 4. Add more fonts
-5. Add 
 
 ## Contact
 For any questions please feel free to contact me:<br/>
