@@ -1,5 +1,8 @@
 # A personal portfolio showcase
 
+## Live preview
+Click [here](https://mikaeljan.github.io/TechdegreePortfolio/.).
+
 ## Building process (! in progress! )
 1. Open up a terminal window and change your working directory to root of this repo.
 2. Run `npm install` command in your terminal window.
