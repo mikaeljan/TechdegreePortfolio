@@ -12,7 +12,7 @@
   font-weight: 700;
   transition: background-color 0.5s; }
   .overlay__button:hover, .btn:hover {
-    background-color: #e16d71;
+    background-color: #e58286;
     color: #fff; }
   .overlay__button:active, .btn:active {
     opacity: initial;
@@ -569,7 +569,7 @@ aside {
   justify-content: space-around;
   align-items: center;
   transform: translateX(-100%);
-  background-color: #292929;
+  background-color: #2C3E50;
   padding: 0.5em;
   text-align: center; }
 
@@ -590,23 +590,26 @@ aside {
 .project:hover .project__overlay {
   transform: translateX(0); }
 
+.contact, .skills {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.25em auto;
+  text-align: center; }
+
+.social {
+  width: 100%;
+  margin: 0.9375em 0; }
+
 .list {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  margin: 1.5625em 0;
-  flex-wrap: wrap; }
+  justify-content: space-around; }
 
 .list svg {
   transition: transform 0.5s ease; }
   .list svg:hover {
     transform: scale(1.2); }
-
-.outer-shape {
-  fill: #fff; }
-
-.inner-shape {
-  fill: #292929; }
 
 .list .icon {
   width: 40px;

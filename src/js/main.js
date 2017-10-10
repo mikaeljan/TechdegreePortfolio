@@ -5,7 +5,6 @@ $(document).ready(function() {
 
         let target = this.hash;
         let $target = $(target);
-        let headerHeight = $(".nav").height();
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top

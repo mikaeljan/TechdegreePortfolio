@@ -20,7 +20,7 @@
   font-weight: $font-weight--bold;
   transition: background-color $trns-duration;
   &:hover {
-    background-color: $button--active;
+    background-color:$button--active;
     color: $color--prim;
   }
   &:active {
