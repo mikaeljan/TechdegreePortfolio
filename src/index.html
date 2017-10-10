@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0"/>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="slick/slick.css"/>
-    <link rel="stylesheet" href="slick/slick-theme.css"/>
+    <!--build:css css/main.min.css inline-->
     <link rel="stylesheet" href="css/hint.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--endbuild-->
 </head>
 <body>
 <div class="container">
@@ -53,8 +53,8 @@
             <!--Welcome banner-->
             <div class="intro__image">
                 <picture class="">
-                    <source media="(min-width:768px)" srcset="img/photos/profile_photo.jpg">
-                    <img class="icon icon--profile" alt="photo of michal" src="img/photos/profile_picture.jpg"/>
+                    <source srcset="img/photos/profile_picture.jpg">
+                    <img  class="icon icon--profile" alt="photo of michal" src="img/photos/profile_picture.jpg"/>
                 </picture>
             </div>
             <div class="intro__description">
@@ -100,73 +100,68 @@
             </div>  <!--end project-->
 
             <div class="project project--3">
-
                 <div class="project__overlay">
-                    <h3>Web App Dashboard</h3>
-                    <p>A single page app using Chart.js library to display data with various types of charts</p>
+                    <h3>Interactive Video Player</h3>
+                    <p>An interactive video player with live transcript featuring clickable text to change video progress</p>
                     <ul class="list">
                         <li class="list__item">HTML</li>
                         <li class="list__item">CSS</li>
                         <li class="list__item">JS</li>
                     </ul>
                     <div class="overlay__buttons">
-                        <a href="https://mikaeljan.github.io/web-app-dashboard-project/" target="_blank" class="overlay__button">Demo</a>
-                        <a href="https://github.com/mikaeljan/web-app-dashboard-project" target="_blank" class="overlay__button">GitHub</a>
+                        <a href="https://mikaeljan.github.io/Interactive_video_player/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/Interactive_video_player" target="_blank" class="overlay__button">GitHub </a>
                     </div>
                 </div>
             </div>
 
             <div class="project project--4">
-
                 <div class="project__overlay">
-                    <h3>Web App Dashboard</h3>
-                    <p>A single page app using Chart.js library to display data with various types of charts</p>
+                    <h3>Interactive Gallery</h3>
+                    <p>A photo gallery with images featuring filter and jQuery overlay</p>
                     <ul class="list">
                         <li class="list__item">HTML</li>
                         <li class="list__item">CSS</li>
                         <li class="list__item">JS</li>
                     </ul>
                     <div class="overlay__buttons">
-                        <a href="https://mikaeljan.github.io/web-app-dashboard-project/" target="_blank" class="overlay__button">Demo</a>
-                        <a href="https://github.com/mikaeljan/web-app-dashboard-project" target="_blank" class="overlay__button">GitHub</a>
+                        <a href="https://mikaeljan.github.io/InteractiveGallery/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/InteractiveGallery/" target="_blank" class="overlay__button">GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project project--5">
-
                 <div class="project__overlay">
-                    <h3>Web App Dashboard</h3>
-                    <p>A single page app using Chart.js library to display data with various types of charts</p>
+                    <h3>Accessibility Refactor</h3>
+                    <p>A simple music band page site refactored to meet WCAG 2.0 accessibility standards</p>
                     <ul class="list">
                         <li class="list__item">HTML</li>
-                        <li class="list__item">CSS</li>
+                        <li class="list__item">WCAG</li>
                         <li class="list__item">JS</li>
+                        <li class="list__item">jQuery</li>
                     </ul>
                     <div class="overlay__buttons">
-                        <a href="https://mikaeljan.github.io/web-app-dashboard-project/" target="_blank" class="overlay__button">Demo</a>
-                        <a href="https://github.com/mikaeljan/web-app-dashboard-project" target="_blank" class="overlay__button">GitHub</a>
+                        <a href="https://mikaeljan.github.io/accessibility_project/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/accessibility_project" target="_blank" class="overlay__button">GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project project--6">
-
                 <div class="project__overlay">
-                    <h3>Web App Dashboard</h3>
-                    <p>A single page app using Chart.js library to display data with various types of charts</p>
+                    <h3>Online Table Tennis Game</h3>
+                    <p>A simple game created using HTML canvas and JS. Game accelerates slowly and tracks score. Nothing more, nothing else.</p>
                     <ul class="list">
                         <li class="list__item">HTML</li>
-                        <li class="list__item">CSS</li>
                         <li class="list__item">JS</li>
                     </ul>
                     <div class="overlay__buttons">
-                        <a href="https://mikaeljan.github.io/web-app-dashboard-project/" target="_blank" class="overlay__button">Demo</a>
-                        <a href="https://github.com/mikaeljan/web-app-dashboard-project" target="_blank" class="overlay__button">GitHub</a>
+                        <a href="https://mikaeljan.github.io/TennisGame/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/TennisGame" target="_blank" class="overlay__button">GitHub</a>
                     </div>
                 </div>
             </div>
-
         </main>        <!--end main-->
     </div>
 
@@ -243,7 +238,8 @@
         src="http://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-<script src="slick/slick.min.js"></script>
+<!--build:js js/main.min.js -->
 <script src="js/main.js"></script>
+<!--endbuild-->
 </body>
 </html>

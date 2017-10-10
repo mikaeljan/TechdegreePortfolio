@@ -8,4 +8,7 @@
   text-align: center;
   padding: em(10px);
   margin-top: em(20px);
+  @include mq("desktop") {
+    font-size: $font-size--lg;
+  }
 }

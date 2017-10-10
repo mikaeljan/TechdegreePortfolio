@@ -3,7 +3,7 @@
 // ======================================
 
 #portfolio {
-  background-color: $color--bg--light;
+  //background-color: darken($color--bg,15%);
   flex: 1;
   display:flex;
   align-items: center;
@@ -11,7 +11,7 @@
   padding:em(5px) 0;
   margin: em(25px) 0;
   border-radius: $br--default;
-  box-shadow: 0 0 45px rgba(0,0,0,.8);
+  //box-shadow: 0 0 45px rgba(0,0,0,.8);
   @include mq("tablet"){
     flex-direction: row;
     flex-wrap: wrap;

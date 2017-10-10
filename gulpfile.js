@@ -14,11 +14,11 @@ const options = {
     dist: 'dist'
 };
 
-gulp.task('inlineSource',["useref"],function(){
-    return gulp.src(options.dist+'/index.html')
-        .pipe(inlineSource())
-        .pipe(gulp.dest(options.dist));
-});
+// gulp.task('inlineSource',["useref"],function(){
+//     return gulp.src(options.dist+'/index.html')
+//         .pipe(inlineSource())
+//         .pipe(gulp.dest(options.dist));
+// });
 
 // Useref task + minifying CSS and JS
 gulp.task('useref',["images"], function(){
@@ -42,7 +42,7 @@ gulp.task('clean', function() {
   del([options.dist, options.src+'/css/styles.min.css',options.src+'/js/main.min.js',]);
 });
 
-gulp.task("build", ['inlineSource'], function() {
+gulp.task("build", ['useref'], function() {
   return gulp.src([],{ base: './'}).
   pipe(gulp.dest(options.dist));
 });

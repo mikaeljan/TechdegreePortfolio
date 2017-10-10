@@ -6,6 +6,9 @@
   @media (min-width: 768px) {
     .title {
       margin: 10px 0 40px 0; } }
+  @media (min-width: 962px) {
+    .title {
+      font-size: 46px; } }
 
 .overlay__button, .btn {
   background-color: #D84348;
@@ -37,10 +40,11 @@
   @media (min-width: 768px) {
     .project {
       width: 45%;
-      margin: 0.625em 0.625em 1.5625em 0; } }
+      margin: 0.625em 0.625em 1.5625em 0.625em; } }
   @media (min-width: 962px) {
     .project {
-      width: 30%; } }
+      width: 30%;
+      margin: 40px 0.625em; } }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -460,7 +464,8 @@ ul, ol {
 body {
   font-size: 16px;
   font-family: "Cormorant", Helvetica, Arial, sans-serif;
-  color: #fff; }
+  color: #fff;
+  line-height: 50px; }
 
 h1,
 h2,
@@ -483,12 +488,19 @@ a:hover {
 .desc {
   font-size: 16px;
   margin: 0.625em 0 1.875em 0; }
+  @media (min-width: 768px) {
+    .desc {
+      font-size: 20px; } }
+  @media (min-width: 962px) {
+    .desc {
+      font-size: 26px; } }
 
 .intro__description .intro__desc {
   font-size: 20px; }
   @media (min-width: 768px) {
     .intro__description .intro__desc {
-      font-size: 26px; } }
+      font-size: 26px;
+      margin-right: 25px; } }
 
 header {
   text-align: center;
@@ -520,6 +532,9 @@ header {
   text-align: center;
   padding: 0.625em;
   margin-top: 1.25em; }
+  @media (min-width: 962px) {
+    .footer {
+      font-size: 26px; } }
 
 .container {
   display: flex;
@@ -544,9 +559,16 @@ header {
     .intro {
       flex-direction: row-reverse;
       align-items: center;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      background-image: url("../img/photos/profile_photo.jpg");
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat; } }
   .intro__image {
     margin: 25px; }
+    @media (min-width: 768px) {
+      .intro__image {
+        visibility: hidden; } }
   .intro__description {
     text-align: center; }
     @media (min-width: 768px) {
@@ -560,21 +582,15 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: stretch; }
-  @media (min-width: 962px) {
-    aside {
-      flex-direction: row;
-      justify-content: stretch; } }
 
 #portfolio {
-  background-color: #FBFBFB;
   flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 0.3125em 0;
   margin: 1.5625em 0;
-  border-radius: 0.4em;
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.8); }
+  border-radius: 0.4em; }
   @media (min-width: 768px) {
     #portfolio {
       flex-direction: row;
@@ -646,6 +662,10 @@ aside {
 .list .icon {
   width: 40px;
   height: 40px; }
+  @media (min-width: 768px) {
+    .list .icon {
+      width: 80px;
+      height: 80px; } }
 
 img {
   width: 100%; }

@@ -9,9 +9,11 @@
 6. At this point dist is already included.
 
 ## Further Implementations
-1. About section
-2. full page carousel/slides?
-6. Add Google Email script - https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+1. Better introduction styling
+2. Full page carousel/slides?
+3. Add Google Email script - https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+4. Add more fonts
+5. Add 
 
 ## Contact
 For any questions please feel free to contact me:<br/>

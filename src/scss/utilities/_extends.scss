@@ -13,6 +13,9 @@
   @include mq("tablet"){
     margin: 10px 0 40px 0;
   }
+  @include mq('desktop') {
+  font-size: $font-size--xxlg;
+  }
 }
 // Buttons
 %btn {
@@ -47,9 +50,10 @@
   overflow: hidden;
   @include mq("tablet"){
     width:45%;
-    margin:em(10px) em(10px) em(25px) 0;
+    margin:em(10px) em(10px) em(25px) em(10px);
   }
   @include mq("desktop"){
     width:30%;
+    margin: 40px em(10px);
   }
 }

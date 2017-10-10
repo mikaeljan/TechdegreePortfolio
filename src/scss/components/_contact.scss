@@ -30,4 +30,8 @@
 .list .icon {
   width: $icon--md;
   height: $icon--md;
+  @include mq("tablet") {
+    width: 80px;
+    height: 80px;
+  }
 }

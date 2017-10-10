@@ -12,24 +12,4 @@ $(document).ready(function() {
             window.location.hash = target;
         });
     });
-    // End Smooth scrolling feature
-
-    //Carousel scrolling
-    // if($(window).width() > 700) {
-    //     $('#portfolio').slick({
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         autoplay: false,
-    //         autoplaySpeed: 4000,
-    //     });
-    // }
-    // $('#portfolio').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 4000,
-    // });
-
-
-    //End carousel scrolling
 });
