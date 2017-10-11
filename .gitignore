@@ -9,5 +9,6 @@
 .idea/vcs.xml
 /docs/img/icons/
 /docs/scss/components/_form.scss
-/docs/slick/
+
 *.scssc
+/.sass-cache/
