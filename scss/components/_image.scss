@@ -13,8 +13,6 @@ img {
     height: $icon--lg;
     border-radius: $br--round;
     @include mq('tablet'){
-      height: $icon--xlg;
-      border-radius: $br--default;
     }
   }
 }

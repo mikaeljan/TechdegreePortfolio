@@ -24,7 +24,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content:space-between;
-    background-image: url('../img/photos/profile_photo.jpg');
+    //background-image: url('../img/photos/profile_photo.jpg');
     background-position: right;
     background-size: contain ;
     background-repeat: no-repeat ;
@@ -33,7 +33,7 @@
   @include e('image'){
     margin:25px;
     @include mq('tablet'){
-      visibility: hidden;
+      margin:auto;
     }
   }
   @include e('description'){

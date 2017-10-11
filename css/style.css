@@ -8,7 +8,7 @@
       margin: 10px 0 40px 0; } }
   @media (min-width: 962px) {
     .title {
-      font-size: 46px; } }
+      font-size: 40px; } }
 
 .overlay__button, .btn {
   background-color: #D84348;
@@ -560,7 +560,6 @@ header {
       flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
-      background-image: url("../img/photos/profile_photo.jpg");
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat; } }
@@ -568,7 +567,7 @@ header {
     margin: 25px; }
     @media (min-width: 768px) {
       .intro__image {
-        visibility: hidden; } }
+        margin: auto; } }
   .intro__description {
     text-align: center; }
     @media (min-width: 768px) {
@@ -677,10 +676,6 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 50%; }
-    @media (min-width: 768px) {
-      .icon--profile {
-        height: 250px;
-        border-radius: 0.4em; } }
 
 .path {
   fill: #fff;
