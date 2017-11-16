@@ -23,7 +23,7 @@
 .project {
   @extend %project;
   @include m("1"){
-    background-image: url("../img/projects/project-1.jpg");
+    background-image: url("../img/projects/project-7.jpg");
   }
   @include m("2"){
     background-image: url("../img/projects/project-2.jpg");
@@ -39,6 +39,9 @@
   }
   @include m("6"){
     background-image: url("../img/projects/project-6.jpg");
+  }
+  @include m("7"){
+    background-image: url("../img/projects/project-1.jpg");
   }
   @include e("overlay"){
     width: 100%;
